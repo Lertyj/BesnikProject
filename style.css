@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica';
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    height: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+@font-face {
+    font-family: 'Helvetica';
+    src: url(fonts/HelveticaNowText-ExtraBold.ttf);
+}
+h1, h2, h3, p, li{
+    color: #767D99;
+}
+.container{
+    margin: 0 auto;
+    background:#F4F7FC;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+}
+/* header */
+header{
+    max-width: 90%;
+    margin: 0 5%;
+}
+.header{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    justify-content: space-around;
+    border-radius: 0 0 20px 20px;
+    align-items: center;
+}
+.header a{
+    color: #767D99;
+}
+.header-menu{
+    display: flex;
+    flex-direction: row;
+}
+.header-menu ul{
+    display: flex;
+    flex-direction: row;
+}
+.header-menu li, .header-button li{
+    padding: 10px;
+}
+.header-button ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+.header-button li:last-child{
+    background: #3B50DF;
+    border-radius: 10px;
+    padding: 13px 20px 13px 20px;
+    margin-left: 15px;
+}
+.header-button li:last-child a{
+    color: #FFFFFF;
+}
+#active{
+
+}
