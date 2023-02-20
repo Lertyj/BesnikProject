@@ -28,6 +28,9 @@ h1, h2, h3, p, li{
     display: flex;
     flex-direction: column;
 }
+.main{
+    flex: 1 1 auto;
+}
 /* header */
 header{
     max-width: 90%;
@@ -70,8 +73,50 @@ header{
     margin-left: 15px;
 }
 .header-button li:last-child a{
-    color: #FFFFFF;
+    color: #F5F5F5;
 }
 #active{
 
+}
+/* Professional marketing */
+.prof-marketing{
+    max-width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
+}
+.prof-marketing-txt h1{
+    font-size: 60px;
+    color: #00015C;
+    margin-bottom: 0.5em;
+}
+.prof-marketing-txt{
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    max-width: 38%;
+}
+.prof-marketing-txt p{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+}
+.prof-marketing-txt-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.prof-marketing-txt-button p{
+    margin-bottom: 0;
+}
+.prof-marketing-txt-button a:first-child{
+    background: #3B50DF;
+    border-radius: 10px;
+    padding: 17px 25px 17px 25px;
+    color: #F5F5F5;
+    margin-right: 15px;
+}
+.prof-marketing-txt-button a:last-child{
+    color: #767D99;
 }
