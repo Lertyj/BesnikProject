@@ -31,6 +31,7 @@ h1, h2, h3, p, li{
 .main{
     flex: 1 1 auto;
 }
+
 /* header */
 header{
     max-width: 90%;
@@ -78,6 +79,7 @@ header{
 #active{
 
 }
+
 /* Professional marketing */
 .prof-marketing{
     max-width: 85%;
@@ -88,7 +90,7 @@ header{
 }
 .prof-marketing-txt h1{
     font-size: 60px;
-    color: #00015C;
+    color: #010254;
     margin-bottom: 0.5em;
 }
 .prof-marketing-txt{
@@ -106,38 +108,47 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center;
+    white-space: nowrap;
 }
 .prof-marketing-txt-button p{
     margin-bottom: 0;
+    margin-left: 15px;
 }
-.prof-marketing-txt-button a:first-child{
+#button{
     background: #3B50DF;
     border-radius: 10px;
     padding: 17px 25px 17px 25px;
     color: #F5F5F5;
-    margin-right: 15px;
+    margin-top: 50px;
 }
 .prof-marketing-txt-button a:last-child{
     color: #767D99;
 }
+
 /* our services */
 .our-services{
+    max-width: 85%;
+    margin: 0 auto;
     margin-top: 150px;
 }
 .our-services-txt{
     text-align: center;
+    margin-bottom: 45px;
 }
 .our-services-txt h2{
-    font-size: 50px;
-    color: #00015C;
+    font-size: 40px;
+    color: #010254;
+    margin-bottom: 0.5em;
+    white-space: nowrap;
 }
 .our-services-txt h3{
     color: #3F53C0;
+    white-space: nowrap;
+    margin-bottom: 1em;
 }
 .our-services-txt p{
-    max-width: 35%;
+    max-width: 31%;
     margin: 0 auto;
-    font-size: 20px;
 }
 .our-services-content{
     margin-top: 30px;
@@ -150,12 +161,120 @@ header{
     height: auto;
     display: flex;
     flex-direction: column;
+    padding:40px 0 40px 30px;
+    border-radius: 20px;
+
 }
 .service-block img{
     max-width: 100%;
     height: auto;
     max-width: 72px;
+    margin-bottom: 20px;
 }
-.our-services-content p{
-    font-size: 20px;
+.our-services-content h3{
+    font-size: 25px;
+    color: #010254;
+    margin-bottom: 0.8em;
+}
+.service-block p{
+    max-width: 86%;
+}
+
+/* about us*/
+.about-us{
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 85%;
+    margin: 0 auto;
+    margin-top: 100px;
+    justify-content: space-between
+}
+.about-us-txt{
+    max-width: 40%;
+    margin-left: 5%;
+}
+.about-us-txt h2{
+    font-size: 40px;
+    color: #010254;
+    margin-bottom: 0.5em;
+}
+.about-us-txt h3{
+    color: #3F53C0;
+    white-space: nowrap;
+    margin-bottom: 1em;
+}
+.about-us-txt p{
+    margin-bottom: 2em;
+    max-width: 90%;
+}
+#about-us-txt-2p{
+    margin-bottom: 50px;
+}
+
+/* our solutions */
+.our-solutions{
+    display: flex;
+    flex-direction: column;
+    max-width: 85%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.our-solutions-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+.our-solutions-content-txt{
+    max-width: 40%;
+    margin-right: 10%;
+    margin-top: 8%;
+}
+.our-solutions-content-txt h2{
+    font-size: 40px;
+    color: #010254;
+    margin-bottom: 0.5em;
+}
+.our-solutions-content-txt h3{
+    color: #3F53C0;
+    white-space: nowrap;
+    margin-bottom: 1em;
+}
+.our-solutions-content-txt p{
+    margin-bottom: 3em;
+}
+.our-solutions-blocks{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+.our-solutions-block{
+    padding: 30px;
+    max-width: 15%;
+    border-radius: 20px;
+}
+.our-solutions-block h2{
+    font-size: 40px;
+    color:#F5F5F5;
+    margin-bottom: 0.3em;
+}
+.our-solutions-block h3{
+    color: #F5F5F5;
+    margin-bottom: 1em;
+}
+.our-solutions-block p{
+    color: #ffffff9a;
+}
+#block1{
+    background: #3B50DF;
+}
+#block2{
+    background: #FF5771;
+}
+#block3{
+    background: #FDB400;
+}
+#block4{
+    background: #627093;
 }
