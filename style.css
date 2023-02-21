@@ -243,7 +243,7 @@ header{
     margin-bottom: 3em;
 }
 .our-solutions-blocks{
-    margin-top: 80px;
+    margin-top: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -277,4 +277,24 @@ header{
 }
 #block4{
     background: #627093;
+}
+/* pricing plan */
+.pricing-plan{
+    display: flex;
+    flex-direction: column;
+    max-width: 85%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.pricing-plan-txt{
+    text-align: center;
+}
+.pricing-plan-txt h2{
+    font-size: 40px;
+    color: #010254;
+    margin-bottom: 0.5em;
+}
+.pricing-plan-txt p{
+    max-width: 43%;
+    margin: 0 auto;
 }
