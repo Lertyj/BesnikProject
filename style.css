@@ -120,3 +120,42 @@ header{
 .prof-marketing-txt-button a:last-child{
     color: #767D99;
 }
+/* our services */
+.our-services{
+    margin-top: 150px;
+}
+.our-services-txt{
+    text-align: center;
+}
+.our-services-txt h2{
+    font-size: 50px;
+    color: #00015C;
+}
+.our-services-txt h3{
+    color: #3F53C0;
+}
+.our-services-txt p{
+    max-width: 35%;
+    margin: 0 auto;
+    font-size: 20px;
+}
+.our-services-content{
+    margin-top: 30px;
+    display: flex;   
+    justify-content: space-evenly
+}
+.service-block{
+    background: #FFFFFF;
+    max-width: 23%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.service-block img{
+    max-width: 100%;
+    height: auto;
+    max-width: 72px;
+}
+.our-services-content p{
+    font-size: 20px;
+}
