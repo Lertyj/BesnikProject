@@ -18,8 +18,11 @@ body{
     font-family: 'Helvetica';
     src: url(fonts/HelveticaNowText-ExtraBold.ttf);
 }
-h1, h2, h3, p, li{
+h3, p, li{
     color: #767D99;
+}
+h1,h2{
+    color: #010254;
 }
 .container{
     margin: 0 auto;
@@ -90,7 +93,6 @@ header{
 }
 .prof-marketing-txt h1{
     font-size: 60px;
-    color: #010254;
     margin-bottom: 0.5em;
 }
 .prof-marketing-txt{
@@ -119,7 +121,6 @@ header{
     border-radius: 10px;
     padding: 17px 25px 17px 25px;
     color: #F5F5F5;
-    margin-top: 50px;
 }
 .prof-marketing-txt-button a:last-child{
     color: #767D99;
@@ -137,7 +138,6 @@ header{
 }
 .our-services-txt h2{
     font-size: 40px;
-    color: #010254;
     margin-bottom: 0.5em;
     white-space: nowrap;
 }
@@ -195,7 +195,6 @@ header{
 }
 .about-us-txt h2{
     font-size: 40px;
-    color: #010254;
     margin-bottom: 0.5em;
 }
 .about-us-txt h3{
@@ -231,7 +230,6 @@ header{
 }
 .our-solutions-content-txt h2{
     font-size: 40px;
-    color: #010254;
     margin-bottom: 0.5em;
 }
 .our-solutions-content-txt h3{
@@ -291,10 +289,119 @@ header{
 }
 .pricing-plan-txt h2{
     font-size: 40px;
-    color: #010254;
     margin-bottom: 0.5em;
 }
 .pricing-plan-txt p{
     max-width: 43%;
+    margin: 0 auto;
+}
+.pricing-plan-columns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.pricing-plan-column{
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    width: 25%;
+    padding: 30px 20px 40px 20px;
+    border-radius: 20px;
+}
+.pricing-plan-column-img{
+    display: flex;
+    flex-direction: row;
+}
+.pricing-plan-column-img-txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15px;
+}
+.pricing-plan-column-img-txt h3{
+    color: #010254;
+    margin-bottom: 0.7em;
+}
+.pricing-plan-column-img-txt h4{
+    color: #767D99;
+}
+.pricing-plan-column-txt{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eaeef5;
+}
+.pricing-plan-column-txt li{
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+    text-indent: 10px; 
+}
+.pricing-plan-column-order-button{
+    margin-top: 20px;
+    text-align: center;
+}
+.pricing-plan-column-order-button h2{
+    margin-bottom: 1.5em;
+}
+.pricing-plan-column-order-button a{
+    color: #3F53C0;
+    padding: 12px 42px;
+    background: none;
+    border-radius: 12px;
+    border: 3px solid #3B50DF;
+}
+#order-button{
+    background: #3B50DF;
+    color: #F5F5F5;
+}
+/*our blog*/
+.our-blog{   
+    display: flex;
+    flex-direction: column;
+    max-width: 85%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.our-blog-txt{
+    text-align: center;
+}
+.our-blog-txt h2{
+    font-size: 40px;
+    margin-bottom: 0.5em;
+}
+.our-blog-txt p{
+    max-width: 43%;
+    margin: 0 auto;
+}
+.our-blog-columns{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+.our-blog-column{
+    display: flex;
+    flex-direction: column;
+    width: 27%;
+}
+.our-blog-column img{
+    background: #E1ECFE;
+    padding: 20px 20px 0 20px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10%;
+}
+.our-blog-column-txt{
+    max-width: 89%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.our-blog-column-txt h3{
+    color: #010254;
+    margin-bottom: 0.5em;
+}
+.our-blog-button{
     margin: 0 auto;
 }
