@@ -18,7 +18,7 @@ body{
     font-family: 'Helvetica';
     src: url(fonts/HelveticaNowText-ExtraBold.ttf);
 }
-h3, p, li{
+h3, h4, p, li{
     color: #767D99;
 }
 h1,h2{
@@ -121,6 +121,7 @@ header{
     border-radius: 10px;
     padding: 17px 25px 17px 25px;
     color: #F5F5F5;
+    cursor: pointer;
 }
 .prof-marketing-txt-button a:last-child{
     color: #767D99;
@@ -323,9 +324,6 @@ header{
     color: #010254;
     margin-bottom: 0.7em;
 }
-.pricing-plan-column-img-txt h4{
-    color: #767D99;
-}
 .pricing-plan-column-txt{
     padding-bottom: 20px;
     border-bottom: 1px solid #eaeef5;
@@ -404,4 +402,110 @@ header{
 }
 .our-blog-button{
     margin: 0 auto;
+}
+/* clients */
+.clients{
+    max-width: 85%;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.clients-txt h2{
+    font-size: 40px;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+.clients-columns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.client-column{
+    background: #FFFFFF;
+    max-width: 25%;
+    padding: 15px 20px;
+    border-radius: 20px;
+}
+.client-column-client{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.client{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.client img{
+    max-width: 100%;
+    height: auto;
+}
+.client-txt{
+    text-indent: 10px;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+}
+.client-img img{
+    max-width: 100%;
+    height: auto;
+}
+.client-txt h3{
+    color: #010254;
+}
+.client-column-txt{
+    max-width: 92%;
+    margin-top: 1em;
+}
+/* sign up */
+.sign-up{
+    background: #EBEEFD;
+    border-radius: 20px;
+    max-width: 85%;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.sign-up-content h2{
+    font-size: 40px;
+    margin-bottom: 1.5em;
+}
+.sign-up-content{
+    max-width: 60%;
+    padding: 70px 20px 70px 20px;
+}
+.sign-up-subscribe{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #FFFFFF;
+    max-width: 75%;
+    padding: 8px 15px 8px 15px;
+    margin: 0 auto;
+    align-items: center;
+    border-radius: 20px;
+}
+.sign-up-subscribe-enter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-indent: 10px;
+}
+.sign-up-subscribe-enter input{
+    border: none;
+    outline: none;
+    opacity: 0.8;
+}
+.sign-up-subscribe-enter img{
+    max-width: 100%;
+    height: auto;
+    min-width: 26px;
+}
+.sign-up-subscribe-button #button{
+    padding: 15px 20px 15px 20px;
+    border: none;
 }
