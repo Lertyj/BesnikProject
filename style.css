@@ -103,7 +103,7 @@ header{
     margin-top: 35px;
     display: flex;
     flex-direction: column;
-    max-width: 38%;
+    max-width: 44%;
 }
 .prof-marketing-txt p{
     display: flex;
@@ -127,8 +127,27 @@ header{
     color: #F5F5F5;
     cursor: pointer;
 }
+.prof-marketing-img{
+    position: relative;
+}
 .prof-marketing-txt-button a:last-child{
     color: #767D99;
+}
+.prof-marketing-txt-statistics{
+    position: absolute;
+    background: #FF5771;
+    max-width: 36%;
+    white-space: nowrap;
+    padding: 0 20px 34px 20px;
+    border-radius: 20px;
+    margin-top: -39.8%;
+}
+.prof-marketing-txt-statistics h2{
+    color: #f5dbdb;
+    margin-top: 1.5em;
+}
+.prof-marketing-txt-statistics p{
+    color:#f5dbdb82;
 }
 
 /* our services */
@@ -574,4 +593,29 @@ header{
     font-size: 12px;
     color:#f5dbdbdb;
     margin: 0 5px;
+}
+
+@media screen and (max-width:1280px) {
+    /* prof marketing */
+    .prof-marketing-txt h1 {
+        font-size: calc(30px + (25 + 25 * 0.7) * ((100vw - 375px)/1440))
+    }
+
+
+
+
+
+
+
+
+
+
+    /*.our-services-content{
+        align-items: normal;
+        overflow-y: hidden;
+        overflow-x: auto;
+    }*/
+}
+@media screen and (max-width:992px){
+    
 }
