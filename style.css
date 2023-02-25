@@ -37,6 +37,8 @@ img{
     max-width: 1440px;
     display: flex;
     flex-direction: column;
+    min-width: 100%;
+    overflow-x: hidden;
 }
 .main{
     flex: 1 1 auto;
@@ -450,8 +452,7 @@ header{
 .pricing-plan-txt{
     text-align: center;
 }
-.pricing-plan-txt h2{
-    font-size: 40px;
+.pricing-plan-txt h2{   
     margin-bottom: 0.5em;
 }
 .pricing-plan-txt p{
@@ -471,6 +472,7 @@ header{
     width: 25%;
     padding: 30px 20px 40px 20px;
     border-radius: 20px;
+    white-space: nowrap;
 }
 .pricing-plan-column-img{
     display: flex;
@@ -489,6 +491,7 @@ header{
 .pricing-plan-column-txt{
     padding-bottom: 20px;
     border-bottom: 1px solid #eaeef5;
+    
 }
 .pricing-plan-column-txt li{
     display: flex;
@@ -513,6 +516,16 @@ header{
 #order-button{
     background: #3B50DF;
     color: #F5F5F5;
+}
+.pricing-plan-columns::-webkit-scrollbar{
+    height: 5px;
+  }
+.pricing-plan-columns::-webkit-scrollbar-track{
+    background:  rgba(50, 53, 60, 1);
+    height: 5px;
+}
+.pricing-plan-columns::-webkit-scrollbar-thumb{
+    background: url(svg/scrollbar.svg) no-repeat center;
 }
 /*our blog*/
 .our-blog{   
@@ -563,6 +576,16 @@ header{
 }
 .our-blog-button{
     margin: 0 auto;
+}
+.our-blog-columns::-webkit-scrollbar{
+    height: 5px;
+  }
+.our-blog-columns::-webkit-scrollbar-track{
+    background:  rgba(50, 53, 60, 1);
+    height: 5px;
+}
+.our-blog-columns::-webkit-scrollbar-thumb{
+    background: url(svg/scrollbar.svg) no-repeat center;
 }
 /* clients */
 .clients{
@@ -618,6 +641,16 @@ header{
     max-width: 92%;
     margin-top: 1em;
 }
+.clients-columns::-webkit-scrollbar{
+    height: 5px;
+  }
+  .clients-columns::-webkit-scrollbar-track{
+    background:  rgba(50, 53, 60, 1);
+    height: 5px;
+}
+.clients-columns::-webkit-scrollbar-thumb{
+    background: url(svg/scrollbar.svg) no-repeat center;
+}
 /* sign up */
 .sign-up{
     background: #EBEEFD;
@@ -631,7 +664,6 @@ header{
     text-align: center;
 }
 .sign-up-content h2{
-    font-size: 40px;
     margin-bottom: 1.5em;
 }
 .sign-up-content{
@@ -713,6 +745,7 @@ header{
 /*footer*/
 .footer{
     background: #11005D;
+    max-width: 100%;
 }
 .footer-txt{
     max-width: 85%;
@@ -748,15 +781,14 @@ header{
     }
     /*prof marketing*/
     .prof-marketing-content{
-        margin-top: 100px;
-        margin-left: 0;
+        margin: 100px auto 0;
     }
     .prof-marketing{
         flex-direction: column;
         margin-top: 30px;
     }
     .prof-marketing-txt{
-        max-width: 82%;
+        max-width: 80%;
         margin-top: 0px;
     }
     .prof-marketing-txt-button {
@@ -768,7 +800,6 @@ header{
     .prof-marketing-content-perfomance h4{
         font-size: calc(9px + (4 + 4 * 0.7) * ((100vw - 375px)/1440));
     }
-
     /* our services */
     .our-services-content h3 {
         font-size: calc(18px + (7 + 7 * 0.7) * ((100vw - 375px)/1440));
@@ -789,7 +820,7 @@ header{
     }
     .about-us-txt {
         text-align: center;
-        max-width: 50%;
+        max-width: 80%;
         margin-left: 0; 
         margin: 0 auto;
     }
@@ -801,6 +832,9 @@ header{
         bottom: -1%;
         right: -4%;
     }
+    .about-us-txt p {
+        margin: 1em  auto;
+    }
     /* our solutions */
     .our-solutions-content{
         flex-direction: column;
@@ -808,7 +842,7 @@ header{
         
     }
     .our-solutions-content-txt{
-        max-width: 50%;
+        max-width: 80%;
         text-align: center;
         margin-bottom: 30px;
         margin-right: 0;
@@ -821,6 +855,67 @@ header{
         overflow-y: hidden;
         overflow-x: auto;
         padding-bottom: 30px;
+    }
+    /* pricing plan*/
+    .pricing-plan-columns{
+        min-width: 100%;
+        overflow-y: hidden;
+        overflow-x: auto;
+        padding-bottom: 30px;
+    }
+    .pricing-plan-column{
+        margin: 0 5%;
+        padding: 30px 60px 36px 20px;
+        width: auto;
+    }
+    .pricing-plan-column-img img{
+        height: 75px;
+    }
+    .pricing-plan-column-order-button a{
+        margin-left: 13%;
+    }
+    .pricing-plan-txt p {
+        max-width: 72%;
+    }
+    /* our blog */
+    .our-blog-column{
+        margin: 0 3%;
+        padding: 15px;
+        min-width: 30%;
+    }
+    .our-blog-columns{
+        justify-content: normal;
+        min-width: 100%;
+        overflow-y: hidden;
+        overflow-x: auto;
+        padding-bottom: 30px;
+    }
+    /* clients */
+    .clients-columns{
+        justify-content: normal;
+        min-width: 100%;
+        overflow-y: hidden;
+        overflow-x: auto;
+        padding-bottom: 30px;
+    }
+    .client-column{
+        margin: 0 3%;
+        min-width: 60%;
+    }
+    /* sign up*/
+    .sign-up-content{
+        align-items: center;
+    }
+    .sign-up-subscribe {
+        max-width: none;
+        width: 80%;
+    }
+    .sign-up-content{
+        max-width: none;
+    }
+    .sign-up-txt{
+        max-width: 90%;
+        margin: 0 auto;
     }
 }
 @media screen and (max-width:992px){
@@ -911,6 +1006,14 @@ header{
         left: -11%;
     }
 }
+@media screen and (max-width:768px) {
+    .footer-txt{
+        flex-direction: column;
+    }
+    .copyright{
+        margin-bottom: 10px;
+    }
+}
 @media screen and (max-width: 576px){
     /* header */
     .header{
@@ -961,4 +1064,36 @@ header{
         min-width: 28%;
         max-width: 28%;
     }
+    /* pricing plan */
+    .pricing-plan-column-order-button a {
+        padding: 12px 23px;
+        margin-left: 0;
+    }
+    .pricing-plan-column-txt li {
+        font-size: 9px;
+    }
+    .pricing-plan-column-img img {
+        width: auto;
+        height: 53px;
+    }
+    /* sign up */
+    .sign-up-subscribe-enter{
+        font-size: 6px;
+        max-width: 10%;
+    }
+    .sign-up-subscribe-button #button {
+        position: relative;
+        z-index: 2;
+        padding: 7px 10px 7px 10px;
+        border: none;
+    }
+    /* general contacts*/
+    .general-contacts-column-img {
+        max-width: none;
+        flex-wrap: wrap;
+    }
+    .general-contacts-column li{
+        font-size: calc(7px + (7 + 7 * 0.7) * ((100vw - 375px)/1440))
+    }
+
 }
