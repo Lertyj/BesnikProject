@@ -881,7 +881,7 @@ header{
     .our-blog-column{
         margin: 0 3%;
         padding: 15px;
-        min-width: 30%;
+        min-width: 50%;
     }
     .our-blog-columns{
         justify-content: normal;
