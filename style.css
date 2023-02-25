@@ -24,6 +24,9 @@ h3, h4, p, li{
 h1,h2{
     color: #010254;
 }
+h2{
+    font-size: 40px;
+}
 img{
     max-width: 100%;
     height: auto;
@@ -84,7 +87,16 @@ header{
     color: #F5F5F5;
 }
 #active{
-
+    color: #38385C;
+}
+#active::before{
+    position: absolute;
+    height: 3px;
+    width: 40px;
+    border-radius: 7px;
+    background: #797A91;
+    content: '';
+    top: 50px;
 }
 
 /* Professional marketing */
@@ -100,10 +112,9 @@ header{
     margin-bottom: 0.5em;
 }
 .prof-marketing-txt{
-    margin-top: 35px;
     display: flex;
     flex-direction: column;
-    max-width: 44%;
+    max-width: 40%;
 }
 .prof-marketing-txt p{
     display: flex;
@@ -127,29 +138,98 @@ header{
     color: #F5F5F5;
     cursor: pointer;
 }
-.prof-marketing-img{
+.prof-marketing-content{
     position: relative;
 }
 .prof-marketing-txt-button a:last-child{
     color: #767D99;
 }
-.prof-marketing-txt-statistics{
-    position: absolute;
-    background: #FF5771;
-    max-width: 36%;
-    white-space: nowrap;
-    padding: 0 20px 34px 20px;
-    border-radius: 20px;
-    margin-top: -39.8%;
+.prof-marketing-content{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-left: 18%;
 }
-.prof-marketing-txt-statistics h2{
-    color: #f5dbdb;
-    margin-top: 1.5em;
-}
-.prof-marketing-txt-statistics p{
-    color:#f5dbdb82;
+.prof-marketing-content-blocks{
+    display: flex;
+    flex-direction: column;
 }
 
+.prof-marketing-content-statistics{
+    position: relative;
+    bottom: 0;
+    background: #FF5771;
+    max-width: 100%;
+    white-space: nowrap;
+    border-radius: 20px;
+    padding: 0 10px;
+    left: -7%;
+}
+.prof-marketing-content h2{
+    color: #f5dbdb;
+    margin-top: 1.5em;
+    margin-bottom: 0.4em;
+}
+.prof-marketing-content p{
+    color:#f5dbdb82;
+    margin-bottom: 2em;
+}
+.prof-marketing-content-perfomance{
+    position: relative;
+    background: #FFFFFF;
+    max-width: 100%;
+    white-space: nowrap;
+    border-radius: 20px;
+    padding: 15px 25px 25px;
+    left: 35%;
+    top: -7%;
+}
+.prof-marketing-content-perfomance h4{
+    display: flex;
+    align-items: center;
+    text-indent: 10px;
+}
+.prof-marketing-content-perfomance div{
+    background: #D8DCF9;
+    width: 100%;
+    height: 9px;
+    margin-top: 36px;
+    border-radius: 5px;
+    position: relative;
+}
+.prof-marketing-content-perfomance span::before{
+    height: 9px;
+    background-color: #D8DCF9;
+    position: absolute;
+    border-radius: 5px;
+    content: '';
+    top: -200%;
+}
+.prof-marketing-content-perfomance .first-line span::before{
+    width: 45%;
+}
+.prof-marketing-content-perfomance .second-line span::before{
+    width: 35%;
+}
+.prof-marketing-content-perfomance .third-line span::before{
+    width: 60%;
+}
+.prof-marketing-content-perfomance span::after{
+    position: absolute;
+    height: 9px;
+    background: #3A51DF;
+    content: '';
+    border-radius: 5px;
+}
+.prof-marketing-content-perfomance .third-line span::after{
+    width: 80%;
+}
+.prof-marketing-content-perfomance .second-line span::after{
+    width: 30%;
+}
+.prof-marketing-content-perfomance .first-line span::after{
+    width: 55%;
+}
 /* our services */
 .our-services{
     max-width: 85%;
@@ -161,7 +241,6 @@ header{
     margin-bottom: 45px;
 }
 .our-services-txt h2{
-    font-size: 40px;
     margin-bottom: 0.5em;
     white-space: nowrap;
 }
@@ -176,18 +255,22 @@ header{
 }
 .our-services-content{
     margin-top: 30px;
-    display: flex;   
-    justify-content: space-evenly
+    display: flex;
+    justify-content: center   
+}
+.service-block img{
+    padding-right: 30px;
 }
 .service-block{
     background: #FFFFFF;
-    max-width: 23%;
+    min-width: 25%;
     height: auto;
     display: flex;
     flex-direction: column;
-    padding:40px 0 40px 30px;
+    padding:40px 5px 40px 30px;
     border-radius: 20px;
-
+    margin: 0 5%;
+    margin-bottom: 20px;
 }
 .service-block img{
     max-width: 100%;
@@ -203,7 +286,16 @@ header{
 .service-block p{
     max-width: 86%;
 }
-
+.our-services-content::-webkit-scrollbar{
+    height: 5px;
+  }
+.our-services-content::-webkit-scrollbar-track{
+    background:  rgba(50, 53, 60, 1);
+    height: 5px;
+}
+.our-services-content::-webkit-scrollbar-thumb{
+    background: url(svg/scrollbar.svg) no-repeat center;
+}
 /* about us*/
 .about-us{
     display: flex;
@@ -218,7 +310,6 @@ header{
     margin-left: 5%;
 }
 .about-us-txt h2{
-    font-size: 40px;
     margin-bottom: 0.5em;
 }
 .about-us-txt h3{
@@ -253,7 +344,6 @@ header{
     margin-top: 8%;
 }
 .our-solutions-content-txt h2{
-    font-size: 40px;
     margin-bottom: 0.5em;
 }
 .our-solutions-content-txt h3{
@@ -277,7 +367,6 @@ header{
     border-radius: 20px;
 }
 .our-solutions-block h2{
-    font-size: 40px;
     color:#F5F5F5;
     margin-bottom: 0.3em;
 }
@@ -387,7 +476,6 @@ header{
     text-align: center;
 }
 .our-blog-txt h2{
-    font-size: 40px;
     margin-bottom: 0.5em;
 }
 .our-blog-txt p{
@@ -435,7 +523,6 @@ header{
     flex-direction: column;
 }
 .clients-txt h2{
-    font-size: 40px;
     margin-bottom: 1.5em;
     text-align: center;
 }
@@ -596,26 +683,176 @@ header{
 }
 
 @media screen and (max-width:1280px) {
-    /* prof marketing */
+    /* other */
     .prof-marketing-txt h1 {
         font-size: calc(30px + (25 + 25 * 0.7) * ((100vw - 375px)/1440))
     }
+    p{
+        font-size: calc(10px + (6 + 6 * 0.7) * ((100vw - 375px)/1440));
+    }
+    h3{
+        font-size: calc(13px + (6 + 6 * 0.7) * ((100vw - 375px)/1440));
+    }
+    h2{
+        font-size: calc(17px + (23 + 23 * 0.7) * ((100vw - 375px)/1440));
+    }
+    /*prof marketing*/
+    .prof-marketing-content{
+        margin-top: 100px;
+        margin-left: 0;
+    }
+    .prof-marketing{
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .prof-marketing-txt{
+        max-width: 82%;
+        margin-top: 0px;
+    }
+    .prof-marketing-txt-button {
+        padding-right: 236px;
+    }
+    .prof-marketing-content-statistics h2{
+        font-size: calc(16px + (7 + 7 * 0.7) * ((100vw - 375px)/1440));
+    }
+    .prof-marketing-content-perfomance h4{
+        font-size: calc(9px + (4 + 4 * 0.7) * ((100vw - 375px)/1440));
+    }
 
-
-
-
-
-
-
-
-
-
-    /*.our-services-content{
+    /* our services */
+    .our-services-content h3 {
+        font-size: calc(18px + (7 + 7 * 0.7) * ((100vw - 375px)/1440));
+    }
+    .our-services-content{
+        min-width: 100%;
         align-items: normal;
         overflow-y: hidden;
         overflow-x: auto;
-    }*/
+    }
+    .our-services-content {
+        justify-content: flex-start;
+    }
 }
 @media screen and (max-width:992px){
-    
+    /* header */
+    .header{
+        align-items: normal;
+        position: relative;
+        padding-bottom: 40px;
+    }
+    .header-logo{
+        position: absolute;
+        left: 30px;
+        padding-top: 7px;
+    }
+    .header-button{
+        position: absolute;
+        right: 80px;
+    }
+    .topnav a{
+        display: none;
+    }
+    .topnav .icon{
+        position: absolute;
+        display: block;
+        right: 105px;
+        top: 0;
+    }
+    .topnav li:last-child{
+        position: absolute;
+        top: 30px;
+        right: -50px;
+    }
+    .topnav.responsive li:last-child{
+        margin-right: 190px;
+    }
+    .topnav.responsive{
+        margin-top: 90px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .topnav.responsive a{
+        display: flex;
+    }
+    .topnav.responsive li:last-child{
+        position: absolute;
+        top: 30px;
+        right: -240px;
+    }
+    .topnav.responsive li{
+        margin-right: -120px;
+        width: 190px;
+    }
+    .topnav li:last-child a{
+        max-width: 50px;
+        max-height: 25px;
+    }
+    #active::before{
+        top: 215px;
+    }
+    .topnav .icon span,.topnav .icon span::after, .topnav .icon span::before{
+        position: absolute;
+        top: 50%;
+        width: 23px;
+        height: 2px;
+        background: #3A5ADF;
+        margin-top: -1px;
+        left: 50%;
+        margin-left: -10%;
+        border-radius: 15%;
+    }
+    .topnav .icon span::after, .topnav .icon span::before{
+        content: '';
+    }
+    .topnav .icon span::after{
+        width: 50%;
+        margin-left: 0;
+        transform: translateY(7px);;
+    }
+    .topnav .icon span::before{
+        transform: translateY(-7px);
+        width: 50%;
+        margin-left: 0;
+        left: 0;
+    }
+}
+@media screen and (max-width: 576px){
+    /* header */
+    .header{
+        padding-bottom: 30px;
+    }
+    .header-button {
+        top: 19px;
+        right: 80px;
+    }
+    .header-logo {
+        left: 10px;
+        padding-top: 6px;
+    }
+    .header-button li {
+        font-size: 10px;
+        padding: 0;
+    }
+    .header-button li:last-child {
+        border-radius: 8px;
+        padding: 5px 10px 5px 10px;
+        margin-left: 10px;
+    }
+    /* prof marketing */
+    .prof-marketing-content-perfomance span::before,.prof-marketing-content-perfomance span::after, .prof-marketing-content-perfomance div{
+        height: 6px;
+    }
+    .prof-marketing-content-perfomance div{
+        margin-top: 7vw;
+    }
+    .prof-marketing-content-perfomance{
+        top: -21%;
+    }
+    .prof-marketing-content-perfomance img{
+        max-width: 12px;
+    }
+    /* our services */
+    .service-block{
+        min-width: 35%;
+    }
 }
