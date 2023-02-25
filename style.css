@@ -387,8 +387,9 @@ header{
 }
 .our-solutions-block{
     padding: 30px;
-    max-width: 15%;
+    min-width: 15%;
     border-radius: 20px;
+    max-width: 15%;
 }
 .our-solutions-block h2{
     color:#F5F5F5;
@@ -401,6 +402,21 @@ header{
 .our-solutions-block p{
     color: #ffffff9a;
 }
+.our-solutions-content-img{
+    position: relative;
+}
+.our-solutions-content-img-statistic{
+    position: absolute;
+    background: #FFFFFF;
+    padding: 15px;
+    border-radius: 14px;
+    top: 8%;
+    left: -19%;
+}
+.our-solutions-content-img-statistic h3{
+    margin-top: 0.5em;
+    margin-bottom: 0.1em;
+}
 #block1{
     background: #3B50DF;
 }
@@ -412,6 +428,16 @@ header{
 }
 #block4{
     background: #627093;
+}
+.our-solutions-blocks::-webkit-scrollbar{
+    height: 5px;
+  }
+.our-solutions-blocks::-webkit-scrollbar-track{
+    background:  rgba(50, 53, 60, 1);
+    height: 5px;
+}
+.our-solutions-blocks::-webkit-scrollbar-thumb{
+    background: url(svg/scrollbar.svg) no-repeat center;
 }
 /* pricing plan */
 .pricing-plan{
@@ -775,6 +801,27 @@ header{
         bottom: -1%;
         right: -4%;
     }
+    /* our solutions */
+    .our-solutions-content{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .our-solutions-content-txt{
+        max-width: 50%;
+        text-align: center;
+        margin-bottom: 30px;
+        margin-right: 0;
+    }
+    .our-solutions-block{
+        margin: 0 5%;
+    }
+    .our-solutions-blocks{
+        min-width: 100%;
+        overflow-y: hidden;
+        overflow-x: auto;
+        padding-bottom: 30px;
+    }
 }
 @media screen and (max-width:992px){
     /* header */
@@ -858,6 +905,11 @@ header{
         margin-left: 0;
         left: 0;
     }
+    /*our solutions */
+    .our-solutions-content-img-statistic{
+        top: 14%;
+        left: -11%;
+    }
 }
 @media screen and (max-width: 576px){
     /* header */
@@ -902,5 +954,11 @@ header{
     .about-us-img-statistic {
         bottom: 1%;
         right: -4%;
+    }
+    /*our solutions*/
+    .our-solutions-block {
+        padding: 22px;
+        min-width: 28%;
+        max-width: 28%;
     }
 }
