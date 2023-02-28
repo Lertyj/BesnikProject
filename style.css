@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -79,19 +80,17 @@ header{
     flex-direction: row;
     align-items: center
 }
-.header-button li:last-child{
+.header-button .header-button-button{
     background: #3B50DF;
     border-radius: 10px;
     padding: 13px 20px 13px 20px;
     margin-left: 15px;
-}
-.header-button li:last-child a{
     color: #F5F5F5;
 }
-#active{
+.active-menu{
     color: #38385C;
 }
-#active::before{
+.active-menu::before{
     position: absolute;
     height: 3px;
     width: 40px;
@@ -133,7 +132,7 @@ header{
     margin-bottom: 0;
     margin-left: 15px;
 }
-#button{
+.button-learn-more{
     background: #3B50DF;
     border-radius: 10px;
     padding: 17px 25px 17px 25px;
@@ -143,7 +142,7 @@ header{
 .prof-marketing-content{
     position: relative;
 }
-.prof-marketing-txt-button a:last-child{
+.prof-marketing-txt-button .how-it-works{
     color: #767D99;
 }
 .prof-marketing-content{
@@ -323,7 +322,7 @@ header{
     margin-bottom: 2em;
     max-width: 90%;
 }
-#about-us-txt-2p{
+.about-us-txt .about-us-txt-2p{
     margin-bottom: 50px;
 }
 .about-us-img{
@@ -348,7 +347,7 @@ header{
 .about-us-img-statistic p{
     margin-bottom: 1em;
 }
-.about-us-img-statistic P:last-child{
+.about-us-img-statistic .about-us-img-statistic-last-p{
     color:#010254;
 }
 /* our solutions */
@@ -419,16 +418,16 @@ header{
     margin-top: 0.5em;
     margin-bottom: 0.1em;
 }
-#block1{
+.block1{
     background: #3B50DF;
 }
-#block2{
+.block2{
     background: #FF5771;
 }
-#block3{
+.block3{
     background: #FDB400;
 }
-#block4{
+.block4{
     background: #627093;
 }
 .our-solutions-blocks::-webkit-scrollbar{
@@ -513,7 +512,7 @@ header{
     border-radius: 12px;
     border: 3px solid #3B50DF;
 }
-#order-button{
+.order-button{
     background: #3B50DF;
     color: #F5F5F5;
 }
@@ -697,7 +696,7 @@ header{
     height: auto;
     min-width: 26px;
 }
-.sign-up-subscribe-button #button{
+.sign-up-subscribe-button .button-learn-more{
     padding: 15px 20px 15px 20px;
     border: none;
 }
@@ -715,13 +714,13 @@ header{
     flex-direction: row;
     justify-content: space-between;
 }
-#general-column{
+.general-column{
     max-width: 25%;
 }
-#general-column p,#general-column h3{
+.general-column p,.general-column h3{
     margin-top: 1em;
 }
-#general-column img{
+.general-column img{
     max-width: 150px;
 }
 .general-contacts-column{
@@ -972,7 +971,7 @@ header{
         max-width: 50px;
         max-height: 25px;
     }
-    #active::before{
+    .active-menu::before{
         top: 215px;
     }
     .topnav .icon span,.topnav .icon span::after, .topnav .icon span::before{
@@ -1020,7 +1019,7 @@ header{
         padding-bottom: 30px;
     }
     .header-button {
-        top: 19px;
+        top: 27px;
         right: 80px;
     }
     .header-logo {
@@ -1031,7 +1030,7 @@ header{
         font-size: 10px;
         padding: 0;
     }
-    .header-button li:last-child {
+    .header-button .header-button-button {
         border-radius: 8px;
         padding: 5px 10px 5px 10px;
         margin-left: 10px;
@@ -1081,7 +1080,7 @@ header{
         font-size: 6px;
         max-width: 10%;
     }
-    .sign-up-subscribe-button #button {
+    .sign-up-subscribe-button .button-learn-more {
         position: relative;
         z-index: 2;
         padding: 7px 10px 7px 10px;

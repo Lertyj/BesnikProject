@@ -1,8 +1,7 @@
-menu.onclick = function meFunction(){
-    var x = document.getElementById('mytopnav')
-    if (x.className === "topnav") {
-        x.className += " responsive"
-    } else {
-        x.className = "topnav"
-    }
+const menuIcon = document.querySelector('.topnav');
+
+function toggleMenuIcon() {
+  menuIcon.classList.toggle('responsive')
 }
+
+menuIcon.addEventListener('click', toggleMenuIcon);
