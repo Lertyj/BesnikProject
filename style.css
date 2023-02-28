@@ -939,15 +939,15 @@ header{
     .topnav .icon{
         position: absolute;
         display: block;
-        right: 105px;
-        top: 0;
+        right: 55px;
+        top: 31px;
     }
-    .topnav li:last-child{
+    .topnav .li-icon{
         position: absolute;
         top: 30px;
         right: -50px;
     }
-    .topnav.responsive li:last-child{
+    .topnav.responsive .li-icon{
         margin-right: 190px;
     }
     .topnav.responsive{
@@ -958,7 +958,7 @@ header{
     .topnav.responsive a{
         display: flex;
     }
-    .topnav.responsive li:last-child{
+    .topnav.responsive .li-icon{
         position: absolute;
         top: 30px;
         right: -240px;
@@ -967,12 +967,12 @@ header{
         margin-right: -120px;
         width: 190px;
     }
-    .topnav li:last-child a{
+    .topnav .li-icon a{
         max-width: 50px;
         max-height: 25px;
     }
     .active-menu::before{
-        top: 215px;
+        top: 229px;
     }
     .topnav .icon span,.topnav .icon span::after, .topnav .icon span::before{
         position: absolute;
