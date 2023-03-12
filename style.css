@@ -97,7 +97,7 @@ header{
     border-radius: 7px;
     background: #797A91;
     content: '';
-    top: 50px;
+    top: 43px;
 }
 
 /* Professional marketing */
@@ -944,8 +944,8 @@ header{
     }
     .topnav .li-icon{
         position: absolute;
-        top: 30px;
-        right: -50px;
+        top: 0;
+        right: 0;
     }
     .topnav.responsive .li-icon{
         margin-right: 190px;
@@ -960,8 +960,8 @@ header{
     }
     .topnav.responsive .li-icon{
         position: absolute;
-        top: 30px;
-        right: -240px;
+        top: 0px;
+        right: -190px;
     }
     .topnav.responsive li{
         margin-right: -120px;
@@ -972,7 +972,7 @@ header{
         max-height: 25px;
     }
     .active-menu::before{
-        top: 229px;
+        top: 210px;
     }
     .topnav .icon span,.topnav .icon span::after, .topnav .icon span::before{
         position: absolute;
